@@ -1,113 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ========================================
+   Consult Anamika Custom Styles
+======================================== */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Segoe UI", sans-serif;
 }
 
-nav {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #f8fbff 0%,
+        #eef6ff 100%
+    );
 }
 
-nav a {
-    text-decoration: none;
-    color: #1f3c88;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #1f6feb;
-}
-
-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: white;
-}
-
-.profile-photo img {
-    width: 180px;
-    height: 180px;
+.hero-image {
+    width: 320px;
+    height: 320px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #f0f0f0;
-    margin-bottom: 20px;
+    border: 8px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-header h1 {
-    font-size: 3rem;
+/* Section Headings */
+.section-title {
+    font-weight: 700;
+    margin-bottom: 2rem;
     color: #1f3c88;
 }
 
-.subtitle {
-    margin-top: 10px;
-    color: #666;
-    font-size: 1.2rem;
+/* Cards */
+.feature-card,
+.article-card {
+    border: none;
+    border-radius: 18px;
+    transition: all 0.3s ease;
 }
 
-.cta-button {
-    display: inline-block;
-    margin-top: 25px;
-    background: #1f6feb;
+.feature-card:hover,
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #0b5ed7
+    );
     color: white;
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 8px;
-    font-weight: bold;
+    border-radius: 24px;
 }
 
-.cta-button:hover {
-    background: #1557c0;
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.section {
-    background: white;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.section h2 {
-    color: #1f3c88;
-    margin-bottom: 15px;
-}
-
+/* Footer */
 footer {
-    text-align: center;
-    padding: 40px;
-    color: #777;
+    background: #1f2937;
+    color: white;
 }
 
-.page-title {
-    text-align: center;
-    color: #1f3c88;
-    margin: 40px 0;
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
+
+    .hero {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
-    header h1 {
-        font-size: 2rem;
+    .hero-image {
+        width: 220px;
+        height: 220px;
+        margin-top: 30px;
     }
 }
