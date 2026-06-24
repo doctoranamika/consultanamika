@@ -1,321 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Anamika Kumari | Consulting Ophthalmologist and General Physician</title>
 
+    <title>Dr. Anamika Kumari | Medicine • Prevention • Insights</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-
-        body {
-            font-family: "Segoe UI", sans-serif;
-        }
-
-        .hero {
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(
-                135deg,
-                #f8fbff 0%,
-                #eef6ff 100%
-            );
-        }
-
-        .hero-image {
-            width: 320px;
-            height: 320px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
-
-        .section-title {
-            font-weight: 700;
-            margin-bottom: 2rem;
-        }
-
-        .feature-card {
-            border: none;
-            border-radius: 18px;
-            transition: 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .article-card {
-            border: none;
-            border-radius: 18px;
-        }
-
-        .cta-section {
-            background: #0d6efd;
-            color: white;
-            border-radius: 24px;
-        }
-
-        footer {
-            background: #1f2937;
-            color: white;
-        }
-
-        .navbar-brand {
-            font-weight: 700;
-        }
-
-        @media (max-width: 768px) {
-
-            .hero {
-                text-align: center;
-                padding-top: 40px;
-                padding-bottom: 40px;
-            }
-
-            .hero-image {
-                width: 220px;
-                height: 220px;
-                margin-top: 30px;
-            }
-        }
-
-    </style>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
-    <div class="container">
+    <!-- Shared Navbar -->
+    <script src="js/navbar-root.js"></script>
 
-        <a class="navbar-brand" href="#">
-            Dr. Anamika Kumari
-        </a>
+    <!-- Hero Section -->
+    <section class="hero">
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar">
+        <div class="container">
 
-            <span class="navbar-toggler-icon"></span>
+            <p class="eyebrow">
+                MEDICINE • PREVENTION • INSIGHTS
+            </p>
 
-        </button>
+            <h1>
+                Exploring medicine through
+                clinical experience,
+                community health,
+                and evidence-based thinking.
+            </h1>
 
-        <div class="collapse navbar-collapse" id="navbar">
+            <p class="hero-description">
 
-            <ul class="navbar-nav ms-auto">
+                Articles, observations, case reflections,
+                and perspectives on healthcare written by
+                Dr. Anamika Kumari.
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="articles.html">Articles</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="resume.html">Resume</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-            </ul>
+            </p>
 
         </div>
 
-    </div>
-</nav>
+    </section>
 
-<section class="hero">
+    <!-- Featured Article -->
 
-    <div class="container">
+    <section class="container mb-5">
 
-        <div class="row align-items-center">
+        <div class="featured-card">
 
-            <div class="col-lg-6">
+            <img
+                src="images/articles/featured.jpg"
+                alt="Featured Article">
 
-                <span class="badge bg-primary mb-3">
-                    Teleconsultation Available
-                </span>
+            <div class="featured-content">
 
-                <h1 class="display-4 fw-bold">
-                    Dr. Anamika Kumari
-                </h1>
+                <div class="featured-label">
+                    Featured Article
+                </div>
 
-                <h3 class="text-primary mb-4">
-                    Ophthalmologist & General Physician
-                </h3>
+                <h2>
+                    Why Hypertension Often Remains Silent
+                    Until It Doesn't
+                </h2>
 
-                <p class="lead">
-                    Evidence-based medical care, chronic disease management,
-                    preventive healthcare, patient education,
-                    and online consultation services.
+                <p>
+                    Understanding one of the most common
+                    yet frequently overlooked health risks,
+                    and why prevention matters.
                 </p>
 
-                <div class="mt-4">
-
-                    <a href="contact.html"
-                       class="btn btn-primary btn-lg me-2">
-
-                        Book Consultation
-
-                    </a>
-
-                    <a href="articles.html"
-                       class="btn btn-outline-primary btn-lg">
-
-                        Read Articles
-
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-6 text-center">
-
-                <img src="images/anamika.jpg"
-                     alt="Dr. Anamika Kumari"
-                     class="hero-image">
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="py-5">
-
-    <div class="container">
-
-        <h2 class="text-center section-title">
-            Areas of Expertise
-        </h2>
-
-        <div class="row g-4">
-
-            <div class="col-md-3">
-
-                <div class="card feature-card shadow-sm h-100">
-
-                    <div class="card-body text-center">
-
-                        <h5>Diabetes</h5>
-
-                        <p>
-                            Diagnosis, treatment and long-term management.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="card feature-card shadow-sm h-100">
-
-                    <div class="card-body text-center">
-
-                        <h5>Hypertension</h5>
-
-                        <p>
-                            Blood pressure control and prevention.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="card feature-card shadow-sm h-100">
-
-                    <div class="card-body text-center">
-
-                        <h5>Preventive Care</h5>
-
-                        <p>
-                            Health screening and wellness planning.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="card feature-card shadow-sm h-100">
-
-                    <div class="card-body text-center">
-
-                        <h5>Lifestyle Medicine</h5>
-
-                        <p>
-                            Nutrition and healthy living guidance.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="bg-light py-5">
-
-    <div class="container">
-
-        <h2 class="text-center section-title">
-            About Dr. Anamika
-        </h2>
-
-        <div class="row justify-content-center">
-
-            <div class="col-lg-8 text-center">
-
-                <p class="lead">
-                    Dedicated to providing compassionate,
-                    evidence-based healthcare and empowering
-                    patients through education and preventive medicine.
-                </p>
-
-                <a href="about.html"
-                   class="btn btn-outline-primary">
-
-                    Learn More
-
+                <a href="articles/hypertension-silent-risk.html">
+                    Read Article →
                 </a>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- Latest Articles -->
 
-<section class="py-5">
+    <section class="container py-5">
 
-    <div class="container">
-
-        <h2 class="text-center section-title">
+        <h2 class="section-title">
             Latest Articles
         </h2>
 
@@ -323,20 +96,20 @@
 
             <div class="col-md-4">
 
-                <div class="card article-card shadow-sm h-100">
+                <div class="article-card">
 
-                    <div class="card-body">
-
-                        <h5>
-                            Understanding Diabetes
-                        </h5>
-
-                        <p>
-                            Learn the early warning signs and
-                            management strategies.
-                        </p>
-
+                    <div class="article-category">
+                        Diabetes
                     </div>
+
+                    <h3>
+                        Understanding Diabetes Beyond Blood Sugar
+                    </h3>
+
+                    <p>
+                        Looking at long-term health,
+                        prevention and quality of life.
+                    </p>
 
                 </div>
 
@@ -344,19 +117,20 @@
 
             <div class="col-md-4">
 
-                <div class="card article-card shadow-sm h-100">
+                <div class="article-card">
 
-                    <div class="card-body">
-
-                        <h5>
-                            Managing Hypertension
-                        </h5>
-
-                        <p>
-                            Practical steps for better blood pressure control.
-                        </p>
-
+                    <div class="article-category">
+                        Prevention
                     </div>
+
+                    <h3>
+                        The Hidden Value of Routine Health Checks
+                    </h3>
+
+                    <p>
+                        Why prevention is often the most
+                        effective treatment.
+                    </p>
 
                 </div>
 
@@ -364,19 +138,20 @@
 
             <div class="col-md-4">
 
-                <div class="card article-card shadow-sm h-100">
+                <div class="article-card">
 
-                    <div class="card-body">
-
-                        <h5>
-                            Preventive Healthcare
-                        </h5>
-
-                        <p>
-                            Why routine health checks are important.
-                        </p>
-
+                    <div class="article-category">
+                        Public Health
                     </div>
+
+                    <h3>
+                        Lessons From Community Health Camps
+                    </h3>
+
+                    <p>
+                        Reflections from field experiences
+                        and preventive outreach.
+                    </p>
 
                 </div>
 
@@ -384,64 +159,68 @@
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- About the Author -->
 
-<section class="container py-5">
+    <section class="container py-5">
 
-    <div class="cta-section p-5 text-center">
-
-        <h2>
-            Need Medical Advice?
+        <h2 class="section-title">
+            About the Author
         </h2>
 
-        <p class="lead">
-            Schedule an online consultation and receive professional guidance.
-        </p>
+        <div class="author-section">
 
-        <a href="contact.html"
-           class="btn btn-light btn-lg">
+            <div class="row align-items-center">
 
-            Book Teleconsultation
+                <div class="col-md-4 text-center">
 
-        </a>
+                    <img
+                        src="images/anamika.jpg"
+                        class="author-photo"
+                        alt="Dr. Anamika Kumari">
 
-    </div>
+                </div>
 
-</section>
+                <div class="col-md-8">
 
-<section class="py-5 bg-light">
+                    <h3>
+                        Dr. Anamika Kumari
+                    </h3>
 
-    <div class="container">
+                    <p>
 
-        <h2 class="text-center section-title">
-            Contact
-        </h2>
+                        Physician, educator, and writer.
+                        Through this platform she shares
+                        perspectives on medicine,
+                        prevention, clinical practice,
+                        and community health.
 
-        <div class="text-center">
+                    </p>
 
-            <p>Email: contact@consultanamika.com</p>
+                    <a href="about.html">
+                        Learn More →
+                    </a>
 
-            <p>Consultation details will be updated shortly.</p>
+                </div>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- Footer -->
 
-<footer class="py-4">
+    <footer>
 
-    <div class="container text-center">
+        © 2026 Dr. Anamika Kumari
 
-        © 2026 Dr. Anamika Kumari. All Rights Reserved.
+    </footer>
 
-    </div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
